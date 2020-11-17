@@ -1,0 +1,282 @@
+body {
+  /* Control the background through inline CSS to simplify required edits for each site update. */
+  display:block;
+  overflow:auto;
+  font-family: 'Xanh Mono', Verdana, sans-serif;
+  color:rgb(255,255,255);
+  font-size:36px;
+  border:0px!important;
+  text-shadow:2px 3px #000;
+  margin:0px;
+  padding:0px;
+}
+
+a:hover {
+  color:rgba(255, 255, 255, 1.0)!important;
+}
+
+video {
+  padding:0px;
+  margin:0px;
+}
+
+.logobox {
+  display:block;
+  position:relative;
+  width:396px;
+  height:396px;
+  left:10%;
+  top:35%;
+  z-index:100;
+}
+
+.blackout {
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background:rgb(0,0,0);
+  z-index:75;
+}
+
+.detailbox {
+  display:block;
+  position:absolute;
+  width:60%;
+  height:auto;
+  right:10%;
+  bottom:10%;
+  text-align:right;
+  z-index:50;
+}
+
+.detailbox p {
+  font-size:26px;
+}
+
+.countdowntext {
+  text-align:right;
+  color:rgb(255,255,255);
+}
+
+.simpleshadow {
+  -webkit-box-shadow: 0 35px 20px #000;
+  -moz-box-shadow: 0 35px 20px #000;
+  box-shadow: 0 35px 20px #000;
+}
+
+.highshadow {
+  position: relative;
+}
+
+.highshadow:before, .highshadow:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:100px;
+  background: #000;
+  -webkit-box-shadow: 0 35px 20px #000;
+  -moz-box-shadow: 0 35px 20px #000;
+  box-shadow: 0 35px 20px #000;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.highshadow:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/* Sized exactly to the video size. */
+#filmstripbox {
+  min-height: 1080px;
+  max-height: 1080px;
+  min-width: 864px;
+  max-width: 864px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+form {
+  text-align:center;
+}
+
+input {
+  width: 60%;
+  min-width: 200px;
+  background:rgba(0,0,0,0);
+  border:1px solid;
+  border-color:rgba(255,255,255,0.5);
+  color:rgba(255,255,255,1.0);
+  height:40px;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+a {
+  color:rgb(255,255,255);
+  transition:0.4s;
+  text-decoration:none!important;
+}
+
+body a:hover {
+  color:#b59d5d;
+}
+
+body article a {
+  color:rgb(255,255,255);
+  text-decoration:none!important;
+}
+
+body article a:hover {
+  color:#b59d5d;
+}
+
+.photobox {
+  display:block;
+  padding:10px;
+}
+
+.photobox img {
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  position:relative;
+  margin:0px auto;
+}
+
+.menubox {
+  display:block;
+  width:auto;
+  height:auto;
+  position:relative;
+  padding:10px;
+  margin:0px auto;
+  text-align:center;
+}
+
+.menubox a {
+  text-decoration:none!important;
+}
+
+.biobox {
+ display:block;
+ background-color:rgba(0,0,0,0.1);
+ border-radius: 4px;
+ /*width: 800px;*/
+ width: 80%;
+ height:auto;
+ position:relative;
+ margin: 0px auto;
+ padding: 0px;
+ text-align:center;
+ font-size:30px;
+ line-height:150%;
+}
+
+.biobox article {
+  text-indent:15px;
+  padding-bottom:10px;
+}
+
+.biobox p {
+  text-indent:15px;
+  text-align:left;
+  padding-left:40px;
+  padding-right:40px;
+  padding-bottom:40px;
+}
+
+.contactinfo {
+  display:block;
+  width:auto;
+  height:auto;
+  position:relative;
+  margin:0px auto;
+  padding-top:50px;
+  text-align:center;
+}
+
+.soundcloudbox {
+  display:block;
+  position:relative;
+  width:auto;
+  height:auto;
+  margin:0px auto;
+  padding-top:10px;
+  padding-bottom:10px;
+  overflow:auto;
+}
+
+.youtubebox {
+  display:block;
+  position:relative;
+  width:auto;
+  height:auto;
+  margin:0px auto;
+  padding-top:10px;
+  padding-bottom:10px;
+  overflow:hidden;
+}
+
+/* This is what centers the Youtube and Soundcloud embeds. */
+iframe {
+  display:block;
+  margin: 0 auto;
+}
+
+.formbox {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.formbox-header {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.formbox-header p {
+  text-align:center;
+  text-indent:0px;
+  padding-bottom:0px;
+}
+
+.artist-contact-form-disclaimer {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.artist-contact-form-disclaimer p {
+  text-align:center;
+  color:rgba(120,120,120,0.8);
+  text-indent:0px;
+  font-size:16px;
+  line-height:90%;
+  padding:0px;
+}
+
+.footer {
+  width:100%;
+  height:100px;
+  overflow:hidden;
+  margin-bottom:100px;
+  text-align:right;
+  font-size:16px;
+}
