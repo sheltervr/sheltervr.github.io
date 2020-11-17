@@ -3,8 +3,8 @@
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = eventCountDownDate - now;
-  var countdownHeader = "Show starts in..."
-  var endText = '<img src="http://sheltervr.club/static/shelter_1.1.jpg" />';
+  var countdownHeader = "The show starts in..."
+  var endText = "The show is on now.";
 
   // Quality of life variables.
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
